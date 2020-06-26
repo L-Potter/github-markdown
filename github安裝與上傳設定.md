@@ -255,7 +255,7 @@ SSH Key，填入 Title 與 Key 後即可送出。
 ::: {.language-bash .highlighter-rouge}
 ::: {.highlight}
 ``` {.highlight}
-$ cd ../ssh
+$ cd ~/.ssh
 $ cat id_rsa.pub
 ```
 :::

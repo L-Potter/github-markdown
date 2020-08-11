@@ -1,22 +1,22 @@
 # github-markdown
 
-git checkout 切換分支
+* git checkout 切換分支
 
-git add <file> 添加某個文件到本次提交
+*  git add <file> 添加某個文件到本次提交
 
 git commit 提交本次commit
 
 git commit -a 提交更新
 
-git push origin [branch-name] 提交更新到遠程分支
+* git push origin [branch-name] 提交更新到遠程分支
 
 git fetch orgin 獲取所有遠程分支的更新
 
-git branch --track <new><remote> 用來第一次創建本地分支提交代碼
+* git branch --track <new><remote> 用來第一次創建本地分支提交代碼
 
 git rebase -i 在本地進行commit的合併 i 之後加相應的參數可以進行到某個時間點合併
 
-git rebase -i~<num>使用d來刪除某個commit
+* git rebase -i~<num>使用d來刪除某個commit
 
 可以通過git reset 和 git checkout 來修改代碼文件的工作區域
 
@@ -26,7 +26,7 @@ git fetch origin, git merge origin/another-branch 用來在更新本地分支(�
 
 git fetch origin, git rebase origin/another-branch 功能同上
 
-當更新本地分支出現:First, rewinding head to replay your work on top of it...,並且要強制更新本地分支則 git fetch origin, git reset --hard origin/<branch>
+* 當更新本地分支出現:First, rewinding head to replay your work on top of it...,並且要強制更新本地分支則 git fetch origin, git reset --hard origin/<branch>
 
 當本地分支更新完成之後, 需要手動git push origin/<branch> 更新跟踪的遠程分支
 
@@ -88,13 +88,13 @@ git ORIG_HEAD 為在進行了一次危險的操作之後， HEAD已經改，ORIG
 
 git tag: 列出所有的tag
 
-git tag <tagname>
+* git tag <tagname>
 
 git tag --list "meg*" 列出以meg開頭的tag
 
-git checkout tags/<tagname> -b <branchname>: checkout 到<tagname> tag上
+* git checkout tags/<tagname> -b <branchname>: checkout 到<tagname> tag上
 
-git push origin <tagname>: 將某個tag，push到遠程
+* git push origin <tagname>: 將某個tag，push到遠程
 
 強制merge，dev 分支overwrite master分支，結果即為master分支的內容變成了dev的內容。 （使用了ours merge strategy ）
 

@@ -78,11 +78,11 @@ git checkout -- <file>恢復修改之前的文件
 
 git 不提交某次更新：
 
-git reset --soft HEAD~1 軟reset到某個點
-git reset <file>將具體某個file從已提交的去除
-git commit -c ORIG_HEAD 使用原來的ORIG_HEAD的commit message信息
-git checkout -- <file>恢復對該文件的改變， 即恢復到之前一個commit版本
-git HEAD 指向當前的commit
+* git reset --soft HEAD~1 軟reset到某個點
+* git reset <file>將具體某個file從已提交的去除
+* git commit -c ORIG_HEAD 使用原來的ORIG_HEAD的commit message信息
+* git checkout -- <file>恢復對該文件的改變， 即恢復到之前一個commit版本
+* git HEAD 指向當前的commit
 
 git ORIG_HEAD 為在進行了一次危險的操作之後， HEAD已經改，ORIG_HEAD為前一個狀態的HEAD通常用來恢復狀態
 
@@ -98,7 +98,7 @@ git push origin <tagname>: 將某個tag，push到遠程
 
 強制merge，dev 分支overwrite master分支，結果即為master分支的內容變成了dev的內容。 （使用了ours merge strategy ）
 
-git checkout dev
-git merge -s ours master
-git checkout master
-git merge dev
+* git checkout dev
+* git merge -s ours master
+* git checkout master
+* git merge dev
